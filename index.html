@@ -1,34 +1,26 @@
-<!DOCTYPE HTML>
-<html lang="es">
-<head>
-<meta charset="utf-8"/>
-<title>Formulario</title>
-<link href="styles.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
-</head>
+<!DOCTYPE html>
+    <html>
+    <head>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
 
-<body>
 
-<!-- formulario de contacto -->
 
-	<form action="https://formspree.io/buenviento@gmx.es" method="post" class="form-consulta"> 
-		<label>Nombre y apellido: <span>*</span>
-			<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
-		</label>
-		
-		<label>Email: <span>*</span>
-			<input type="email" name="email" placeholder="Email" class="campo-form" required>
-		</label>
-		
-		<label>Consulta:
-			<textarea name="consulta" class="campo-form"></textarea>
-		</label>
 
-		<input type="submit" value="Enviar" class="btn-form">
+
+<form name="formulario" method="post" action="https://formspree.io/buenviento@gmx.es">
+  <!-- Campo de texto combinado con lista de opciones -->
+  <input type="text" list="items">
+  <!-- Lista de opciones -->
+  <datalist id="items">
+    <option value="1">jamon 1 kilo </option>
+    <option value="2">jamon 2 kilos </option>
+    <option value="3">jamon 3 kilos </option>
+  </datalist>
+<input type="submit" value="Enviar" class="btn-form">
 	</form>
 
-<!-- formulario -->
 
-</body>
-</html>
-
+    </body>
+    </html>
