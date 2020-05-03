@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
@@ -9,6 +9,26 @@
 
 <body>
 
-<form action = "http://formspree.io/buenviento@gmx.es"> <input type = "email" name = "_ replyto"> <textarea name = "body"> </textarea> <input type = " submit "value =" Enviar "> </form>
+<!-- formulario de contacto -->
+
+	<form action="http://formspree.io/buenviento@gmx.es" method="post" class="form-consulta"> 
+		<label>Nombre y apellido: <span>*</span>
+			<input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
+		</label>
+		
+		<label>Email: <span>*</span>
+			<input type="email" name="email" placeholder="Email" class="campo-form" required>
+		</label>
+		
+		<label>Consulta:
+			<textarea name="consulta" class="campo-form"></textarea>
+		</label>
+
+		<input type="submit" value="Enviar" class="btn-form">
+	</form>
+
+<!-- formulario -->
+
 </body>
 </html>
+
